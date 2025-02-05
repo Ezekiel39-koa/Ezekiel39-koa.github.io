@@ -1,34 +1,50 @@
 # Ezekiel39-koa.github.io
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Spin-off of "Challenge: The overflowing ocean"</title>
-        <style>
-            .info {
-                background: rgb(8, 243, 247);
-                
-            }
-            .pic{
-                width:70%;
-            }
-            
-        </style>
-    </head>
-    <body>
+var xPositions = [250,300,150,50];
+var yPositions = [0,100,200,300];
+var leftX = 140;
+
+draw = function() {
+    background(204, 247, 255);
     
-        <h1>The ocean</h1>
-        
-        <img class="pic" src="https://www.kasandbox.org/programming-images/landscapes/beach-in-hawaii.png" alt="Photo of rocky ocean beach in Hawaii">
-        
-        <div class="info">
-            <p>The <strong>ocean</strong> is the connected body of salty water that covers 70.8% of the Earth's surface. The sea moderates the Earth's climate and has important roles in the water cycle, carbon cycle, and nitrogen cycle. Although the sea has been travelled and explored since prehistory, the modern scientific study of the sea—oceanography—dates broadly to the British Challenger expedition of the 1870s. The sea is conventionally divided into four or five large sections, such as the Pacific, called oceans while smaller sections, such as the Mediterranean, are known as seas.
-            </p>
-            <p>
-    Owing to the present state of continental drift, the Northern Hemisphere is now fairly equally divided between land and sea (a ratio of about 2:3) but the South is overwhelmingly oceanic (1:4.7). Salinity in the open ocean is generally in a narrow band around 3.5% by mass, although this can vary in more landlocked waters, near the mouths of large rivers, or at great depths. About 85% of the solids in the open sea are sodium and chloride. Deep-sea currents are produced by differences in salinity and temperature. Surface currents are formed by the friction of waves produced by the wind and by tides, the changes in local sea level produced by the gravity of the Moon and Sun. The direction of all of these is governed by surface and submarine land masses and by the rotation of the Earth (the Coriolis effect).
-            </p>
-            
-            <a href="http://en.wikipedia.org/wiki/Sea">Read more on Wikipedia</a>
-        </div>
-        
-    </body>
-</html>
+  
+    for (var i = 0; i < xPositions.length; i++){
+        noStroke();
+        fill(0, 200, 255);
+        if (yPositions[i] > 400){ 
+            yPositions[i] = 0;
+        }
+            ellipse(xPositions[i], yPositions[i], 10, 10);
+        yPositions[i] += random(1,10);
+          var leftX = 140;
+var rightX = 278;
+
+     leftX +=-1;
+     rightX +=1;
+    // clouds 
+    fill(189, 185, 189);
+    // left cloud
+    ellipse(leftX-38, 42, 126, 97);
+    ellipse(leftX+40, 42, 70, 60);
+    ellipse(leftX-111, 42, 70, 60);
+    
+    // right cloud
+    ellipse(rightX, 94, 126, 97);
+    ellipse(rightX+69, 94, 70, 60);
+    ellipse(rightX-81, 94, 70, 60);
+ // left cloud 2.
+    ellipse(leftX-29, 120, 126, 97);
+    ellipse(leftX+52, 120, 70, 60);
+    ellipse(leftX-105, 120, 70, 60);
+    
+    // right cloud 2.
+    ellipse(rightX, 40, 126, 97);
+    ellipse(rightX+90, 40, 70, 60);
+    ellipse(rightX-90, 40, 70, 60);
+    
+    }
+   
+};  
+    var mouseClicked = function(){
+    xPositions.push(random(0,400));
+    yPositions.push(random(0,400));
+};

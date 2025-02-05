@@ -5,7 +5,7 @@
         <title>Spin-off of "Challenge: The overflowing ocean"</title>
         <style>
             .info {
-                background: rgb(219, 235, 255);
+                background: rgb(8, 243, 247);
                 
             }
             .pic{

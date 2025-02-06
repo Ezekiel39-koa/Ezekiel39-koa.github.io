@@ -30,9 +30,8 @@
             <img class="photo" src="https://www.kasandbox.org/programming-images/animals/boxer-laying-down.png">
             
             <img class="photo" src="https://www.kasandbox.org/programming-images/animals/boxer-wagging-tongue.png">
-            
+            <p>Boxers are excellent guard dogs and can make for excellent protectors. If you need a dog that is well equipped to guard and protect your home and possessions from potential intruders, then you should consider a boxer. They are also good pets for any person who likes to go on walks or hikes and would appreciate having a running buddy.</p>
         </div>
         
     </body>
 </html>
-Boxers are excellent guard dogs and can make for excellent protectors. If you need a dog that is well equipped to guard and protect your home and possessions from potential intruders, then you should consider a boxer. They are also good pets for any person who likes to go on walks or hikes and would appreciate having a running buddy.
